@@ -1,4 +1,9 @@
-console.log("Hello World")
+const Server = require("./index")
+
+function entrypoint(){
+	const server = new Server();
+	server.start();
+}
 
 
-process.exit(0);
+entrypoint();
